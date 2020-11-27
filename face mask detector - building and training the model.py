@@ -1,6 +1,6 @@
 import cv2,os
 
-data_path=r"C:\Users\user\RCS-myfile\face mask detection with database\experiements\data"
+data_path=r"path for the data folder - containing both with and witout mask input data"
 categories=os.listdir(data_path)
 labels=[i for i in range(len(categories))]
 
@@ -117,7 +117,7 @@ import numpy as np
 
 
 
-face_clsfr=cv2.CascadeClassifier(r"C:\Users\user\AppData\Local\Programs\Python\Python38\haarcascade_frontalface_default.xml")
+face_clsfr=cv2.CascadeClassifier(r"path for haar-cascase-classifier")
 
 source=cv2.VideoCapture(0)
 
