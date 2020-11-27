@@ -1,6 +1,6 @@
 ## loading the saved model ##
 
-model=load_model(r"C:\Users\user\AppData\Local\Programs\Python\Python38\model no 5- by try 3- acc-0.91")
+model=load_model(r"path for the saved model with good accuracy.")
 
 model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
 
@@ -8,7 +8,7 @@ model.summary()
 
 ## face- mask detection ##
 
-face_classifier=cv2.CascadeClassifier(r"C:\Users\user\AppData\Local\Programs\Python\Python38\haarcascade_frontalface_default.xml")
+face_classifier=cv2.CascadeClassifier(r" path for haar-cascade-classifier")
 labels_dict={0:'NO MASK',1:'MASK'}
 color_dict={0:(0,0,255),1:(0,255,0)}
 number = 0
@@ -36,12 +36,13 @@ while(number < 5):
     cv2.imshow('photo',img)
     key=cv2.waitKey(2)
     if label:
-        playsound(r"C:\Users\user\RCS-myfile\speech.mp3")
+        playsound(r"path for speech.mp3") # voice for wearing a face mask
     else:
-        playsound(r"C:\Users\user\RCS-myfile\crazy.mp3")
+        playsound(r"path for crazy.mp3") # voice for not wearing a face mask.
 
 if number >= 5:
-    playsound(r"C:\Users\user\RCS-myfile\speech (2).mp3")
+    #voice indicates that the room is full.
+    playsound(r"path speech (2).mp3")
 
 cv2.destroyAllWindows()
 source.release()
