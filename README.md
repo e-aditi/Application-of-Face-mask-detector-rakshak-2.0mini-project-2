@@ -24,7 +24,7 @@ https://github.com/aieml/face-mask-detection-keras
 
 https://towardsdatascience.com/covid-19-face-mask-detection-using-tensorflow-and-opencv-702dd833515b
 
-#This is a team project, team members:
+# This is a team project, team members:
 
 Phani Tulasi - https://www.linkedin.com/in/phani-tulasi-batchu-a998651a8
 
